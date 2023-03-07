@@ -1,6 +1,6 @@
 /* ROOT */
 :root {
-  --main-bg-color: #E5E5E5;
+  --main-bg-color: #F9F8F8;
   --header-btn_bg-text-color: #333333;
   --icon-btn-color: #FFBD54;
   --text-color: #949494;
@@ -26,7 +26,7 @@ body {
   margin: 0;
   font-family: "Arial", sans-serif; /* CHANGE */
   font-weight: 400; /* CHANGE */
-  background-color: #fff; /* CHANGE */
+  background-color: var(--main-bg-color) /* CHANGE */
 }
 
 img {
@@ -68,6 +68,132 @@ a {
   text-decoration: none;
 }
 /* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+
+/************** COMPANY INFO STYLE STARTS **************/
+.section__company{
+  background-color: #F9F8F8;
+}
+
+.company-information{
+  position: relative;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.company__adress{
+  margin-top: 0;
+  margin-right: 106px;
+  margin-bottom: 0;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--header-btn_bg-text-color);
+}
+
+.company__adress::before{
+  display: block;
+  content: url(../images/home_icon.svg);
+  position: absolute;
+  left: 94px;
+}
+
+.company__phones{
+  margin-top: 0;
+  margin-right: 106px;
+  margin-bottom: 0;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--header-btn_bg-text-color);
+}
+
+.company__phones::before{
+  display: block;
+  content: url(../images/phone_icon.svg);
+  position: absolute;
+  left: 416px;
+}
+
+.company__working-hours{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--header-btn_bg-text-color);
+}
+
+.company__working-hours::before{
+  display: block;
+  content: url(../images/time_icon.svg);
+  position: absolute;
+  left: 850px;
+}
+/************** COMPANY INFO STYLE ENDS **************/
+
+
+/************** HEADER STYLES START **************/
+.site-header{
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #fff;
+}
+
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.site-nav{
+}
+
+
+.sitenav__list{
+  display: flex;
+  align-items: center;
+}
+
+.sitenav__item:not(:last-child){
+  margin-right: 55px;
+}
+
+.sitenav__link{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--header-btn_bg-text-color);
+}
+
+
+.site__header-questionlink{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--header-btn_bg-text-color);
+}
+
+
+/************** HEADER STYLES END **************/
+
+
+
+
 /************** MAIN STYLES START **************/
 
 /************** MAIN STYLES END **************/
