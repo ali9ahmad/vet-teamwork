@@ -188,12 +188,70 @@ a {
   color: var(--header-btn_bg-text-color);
 }
 
-
 /************** HEADER STYLES END **************/
 
-
-
-
 /************** MAIN STYLES START **************/
+
+
+/************** HERO SECTION STYLE STARTS **************/
+.hero-section{
+  padding-top: 153px;
+  padding-bottom: 73px;
+  background-color: #F9F8F8;
+}
+
+.hero__wrapper--end{
+  margin-left: auto;
+  width: 608px;
+}
+
+
+.hero__title{
+  margin-top: 0;
+  margin-bottom: 29px;
+  width: 100%;
+  max-width: 608px;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 64px;
+  color: var(--header-btn_bg-text-color);
+}
+
+.hero__title--blue{
+  color: var(--hero-text-color);
+}
+
+.hero__desc{
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--text-color);
+}
+
+.hero__link{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px 48px;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background: #333333;
+  border-radius: 3px;
+}
+
+
+
+/************** HERO SECTION STYLE ENDS **************/
+
+
 
 /************** MAIN STYLES END **************/
