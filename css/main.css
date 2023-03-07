@@ -1,8 +1,10 @@
 /* ROOT */
 :root {
-  --header-bg-color: #fff; /* CHANGE */
-  --main-bg-color: #fff; /* CHANGE */
-  --main-text-color: #fff; /* CHANGE */
+  --main-bg-color: #E5E5E5;
+  --header-btn_bg-text-color: #333333;
+  --icon-btn-color: #FFBD54;
+  --text-color: #949494;
+  --hero-text-color: #78C0DE;
 }
 
 html {
@@ -47,7 +49,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1320px; /* CHANGE */
+  max-width: 1345px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
