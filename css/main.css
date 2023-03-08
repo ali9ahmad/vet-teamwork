@@ -189,7 +189,7 @@ a {
   /* background-color: #fff; */
   /* background-color: #F9F8F8; */
   background: linear-gradient(to bottom, #F9F8F8 50%, #fff 40%);
-
+  
 }
 
 .header__wrapper{
@@ -339,8 +339,8 @@ a {
   background-color: #F9F8F8;
   background-image: url('../images/hero.png');
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: calc(50% - 160px) calc(50% - 100px);
+  background-size: 110%;
+  background-position: calc(50% - 40px) calc(50% - 91px);
   
 }
 
@@ -395,7 +395,71 @@ a {
 
 
 /************** HERO SECTION STYLE ENDS **************/
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+/************** CONNECTION SECTION STYLES START **************/
+.connection {
+  background-image: url('../images/Subscription.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 216px;
+}
 
+.connection_wrapper {
+  margin-top: 127px;
+  margin-bottom: 151px;
+  padding-top: 177px;
+  padding-bottom: 192px;
+  
+}
+
+.connection__wrapper--start {
+  margin-left: 100px;
+}
+
+.connection__title {
+  margin-bottom: 45px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.email {
+  display: inline-block;
+  margin-right: 21px;
+  border: none;
+  outline: none;
+  width: 335px;
+  padding: 18px 20px;  
+  border-radius: 5px;
+}
+
+.email:placeholder-shown {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  color: #949494;
+  background-color: #fff;
+}
+
+.submitbtn {
+  padding: 17px 51px;
+  background-color: #333;
+  border-radius: 3px;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  border: 1px solid #333;
+  outline: none;
+}
+/************** CONNECTION SECTION STYLES END **************/
 
 
 /************** MAIN STYLES END **************/
