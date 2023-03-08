@@ -1,3 +1,41 @@
+/* futura-pt-400 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/FuturaPTBook.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+  url('../fonts/FuturaPTBook.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* futura-pt-medium */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/FuturaPTMedium.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+  url('../fonts/FuturaPTMedium.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* futura-pt-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/FuturaPTDemi.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+  url('../fonts/FuturaPTDemi.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* futura-pt-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/FuturaPTBold.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+  url('../fonts/FuturaPTBold.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
 /* ROOT */
 :root {
   --main-bg-color: #F9F8F8;
@@ -24,9 +62,10 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
-  font-family: "Arial", sans-serif; /* CHANGE */
-  font-weight: 400; /* CHANGE */
-  background-color: var(--main-bg-color) /* CHANGE */
+  font-family: "Futura PT", sans-serif; /* CHANGE */
+  font-weight: 500; /* CHANGE */
+  background-color: #F9F8F8;
+  /* CHANGE */
 }
 
 img {
@@ -49,7 +88,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1345px;
+  max-width: 1350px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
@@ -75,7 +114,8 @@ a {
 }
 
 .company-information{
-  position: relative;
+  /* background-color: #F9F8F8; */
+  padding-left: 200px;
   padding-top: 13px;
   padding-bottom: 13px;
   display: flex;
@@ -84,8 +124,9 @@ a {
 }
 
 .company__adress{
+  position: relative;
   margin-top: 0;
-  margin-right: 106px;
+  margin-right: 50px;
   margin-bottom: 0;
   font-family: 'Futura PT';
   font-style: normal;
@@ -99,12 +140,13 @@ a {
   display: block;
   content: url(../images/home_icon.svg);
   position: absolute;
-  left: 94px;
+  left: -19px;
 }
 
 .company__phones{
+  position: relative;
   margin-top: 0;
-  margin-right: 106px;
+  margin-right: 50px;
   margin-bottom: 0;
   font-family: 'Futura PT';
   font-style: normal;
@@ -115,13 +157,14 @@ a {
 }
 
 .company__phones::before{
+  position: absolute;
   display: block;
   content: url(../images/phone_icon.svg);
-  position: absolute;
-  left: 416px;
+  left: -20px;
 }
 
 .company__working-hours{
+  position: relative;
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Futura PT';
@@ -133,35 +176,51 @@ a {
 }
 
 .company__working-hours::before{
+  position: absolute;
   display: block;
   content: url(../images/time_icon.svg);
-  position: absolute;
-  left: 850px;
+  left: -20px;
 }
 /************** COMPANY INFO STYLE ENDS **************/
-
-
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
 /************** HEADER STYLES START **************/
 .site-header{
   position: relative;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  /* background-color: #F9F8F8; */
+  background: linear-gradient(to bottom, #F9F8F8 50%, #fff 40%);
+
 }
 
 .header__wrapper{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.site__header-link {
+  position: absolute;
+  z-index: 99;
+  /* margin-right: 30px; */
+}
+
+.site__header-logo {
+  width: 177px;
+  height: 86px;
+}
 
 .site-nav{
+  margin-left: 250px;
+  display: flex;
 }
 
 
 .sitenav__list{
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -196,8 +255,13 @@ a {
 /************** HERO SECTION STYLE STARTS **************/
 .hero-section{
   padding-top: 153px;
-  padding-bottom: 73px;
+  padding-bottom: 238px;
   background-color: #F9F8F8;
+  background-image: url('../images/hero.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: calc(50% - 160px) calc(50% - 100px);
+  
 }
 
 .hero__wrapper--end{
@@ -209,11 +273,10 @@ a {
 .hero__title{
   margin-top: 0;
   margin-bottom: 29px;
-  width: 100%;
-  max-width: 608px;
+  /* width: 100%; */
+  width: 680px;
   font-family: 'Futura PT';
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 70px;
   line-height: 64px;
   color: var(--header-btn_bg-text-color);
@@ -227,14 +290,15 @@ a {
   margin-top: 0;
   margin-bottom: 38px;
   font-family: 'Futura PT';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 27px;
+  width: 495px;
   color: var(--text-color);
 }
 
 .hero__link{
+  display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
   padding: 15px 48px;
