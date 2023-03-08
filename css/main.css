@@ -93,7 +93,7 @@ img {
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
-
+  
 }
 
 .formarginb {
@@ -742,13 +742,113 @@ a {
   line-height: 22px;
   color: #3D9CEA;
 }
-
-
 /************** USEFULL SECTION STYLES END **************/
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+/************** CONNECT SECTION STYLES START **************/
 
+.connect {
+  margin-bottom: 247px;
+}
+
+.forbg {
+  display: flex;
+  width: 100%;
+}
+
+.maparea {
+  background-color: blue;
+  width: 50%;
+}
+
+.forinput {
+  padding: 62px 200px;
+  width: 70%;
+  height: 764px;
+  background-color: #333;
+  background-image: url('../images/connect-background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.conntection__title {
+  width: 381px;
+  margin-bottom: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  color: #fff;
+}
+
+.connection__desc {
+  width: 383px;
+  margin-bottom: 29px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+}
+
+.formarea {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+}
+
+.input {
+  padding: 16px 20px;
+  border: none;
+  outline: none;
+}
+
+.input:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+
+
+.input:placeholder-shown {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.text {
+  padding-top: 17px;
+  padding-left: 22px;
+  margin-bottom: 30px;
+}
+
+.text:placeholder-shown {
+  /* font-family: 'Futura PT'; */
+  /* font-style: normal; */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #949494;
+}
+
+.send {
+  width: 226px;
+  padding: 15px 39px;
+  display: inline-block;
+  background: #FFBD54;
+  border-radius: 0px;
+  /* font-family: 'Futura PT'; */
+  /* font-style: normal; */
+  /* font-weight: 500; */
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+/************** CONNECT SECTION STYLES END **************/
 /************** MAIN STYLES END **************/
-
-
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
 /************** FOOTER STYLES START **************/
 .site-footer{
   padding-top: 54px;
