@@ -93,6 +93,11 @@ img {
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
+
+}
+
+.formarginb {
+  margin-bottom: -200px;
 }
 
 ol,
@@ -384,10 +389,13 @@ a {
   color: #333333;
 }
 .service{
+  padding: 41px 23px;
   margin-top: 0;
   margin-bottom: 235px;
   display: inline-flex;
   justify-content: space-between;
+  background-color: #fff;
+  border-radius: 0px 5px 5px 5px;
 }
 .first-check__wrapper--start{
   width: 598px;
@@ -424,7 +432,7 @@ a {
 }
 .price{
   margin-right: 21px;
-  padding: 15px 35px;
+  padding: 12px 19px;
   color: #fff;
   background-color: #FFBD54;
   border-color: #F9F9F9;
@@ -440,7 +448,7 @@ a {
 }
 .subscribe{
   margin-right: 21px;
-  padding: 15px 37px;
+  padding: 12px 19px;
   width: 241px;
   height: 50px;
   color: #fff;
@@ -468,6 +476,7 @@ a {
   background-repeat: no-repeat;
   background-size: 110%;
   background-position: calc(50% - 40px) calc(50% - 91px);
+  margin-bottom: -60px;
   
 }
 
@@ -534,7 +543,7 @@ a {
 
 .connection_wrapper {
   margin-top: 127px;
-  margin-bottom: 151px;
+  margin-bottom: -120px;
   padding-top: 177px;
   padding-bottom: 192px;
   
@@ -589,6 +598,10 @@ a {
 /************** CONNECTION SECTION STYLES END **************/
 /* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
 /************** USEFULL SECTION STYLES START **************/
+
+.usefull {
+  margin-bottom: 256px;
+}
 
 .usefull__wrapper {
   text-align: center;
