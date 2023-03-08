@@ -460,7 +460,151 @@ a {
   outline: none;
 }
 /************** CONNECTION SECTION STYLES END **************/
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+/************** USEFULL SECTION STYLES START **************/
 
+.usefull__wrapper {
+  text-align: center;
+}
+
+.usefull__title{
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-family: 'Futura PT';
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 20px;
+  align-items: center;
+  color: #333;
+}
+
+.usefull__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usefull__list--item{
+  border: 1px solid #E4E4E2;
+  border-radius: 5px;
+  width: 305px;
+}
+
+.usefull__list--item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.usefull__list--end {
+  text-align: left;
+  padding: 21px;
+}
+
+.usefull__list--end .date {
+  text-align: right;
+}
+
+.date {
+  margin-bottom: 2px;
+  display: block;
+  margin-left: auto;
+  /* font-family: 'Futura PT'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #949494;
+}
+
+.usefull__item--title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  align-self: center;
+  font-family: 'Futura PT';
+  width: 182px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  color: #000;
+}
+
+.usefull__item--desc {
+  margin-top: 0;
+  margin-bottom: 38px;
+  /* font-family: 'Futura PT'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  width: 244px;
+}
+
+.usefull__link {
+  margin-left: 30px;
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333;
+}
+
+.usefull__link::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url('../images/pet.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.middle-card {
+  width: 640px;
+  display: flex;
+}
+
+.middle-card__start {
+  width: 305px;
+  height: 435px;
+}
+
+.middle-card--image {
+  width: 100%;
+  height: 435px;
+}
+
+.middle-card-title {
+  margin-bottom: 15px;
+}
+
+
+.hash__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.middle-card__end {
+  text-align: left;
+  padding: 23px 30px;
+}
+
+
+.hash__item-link{
+  /* font-family: 'Futura PT'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #3D9CEA;
+}
+
+
+/************** USEFULL SECTION STYLES END **************/
 
 /************** MAIN STYLES END **************/
 
