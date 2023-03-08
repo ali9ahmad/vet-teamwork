@@ -1,8 +1,48 @@
+/* futura-pt-400 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/FuturaPTBook.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+  url('../fonts/FuturaPTBook.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* futura-pt-medium */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/FuturaPTMedium.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+  url('../fonts/FuturaPTMedium.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* futura-pt-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/FuturaPTDemi.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+  url('../fonts/FuturaPTDemi.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* futura-pt-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/FuturaPTBold.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+  url('../fonts/FuturaPTBold.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
 /* ROOT */
 :root {
-  --header-bg-color: #fff; /* CHANGE */
-  --main-bg-color: #fff; /* CHANGE */
-  --main-text-color: #fff; /* CHANGE */
+  --main-bg-color: #F9F8F8;
+  --header-btn_bg-text-color: #333333;
+  --icon-btn-color: #FFBD54;
+  --text-color: #949494;
+  --hero-text-color: #78C0DE;
 }
 
 html {
@@ -22,9 +62,10 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
-  font-family: "Arial", sans-serif; /* CHANGE */
-  font-weight: 400; /* CHANGE */
-  background-color: #fff; /* CHANGE */
+  font-family: "Futura PT", sans-serif; /* CHANGE */
+  font-weight: 500; /* CHANGE */
+  background-color: #F9F8F8;
+  /* CHANGE */
 }
 
 img {
@@ -47,7 +88,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1263px;
+  max-width: 1350px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
@@ -66,6 +107,148 @@ a {
   text-decoration: none;
 }
 /* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+
+/************** COMPANY INFO STYLE STARTS **************/
+.section__company{
+  background-color: #F9F8F8;
+}
+
+.company-information{
+  /* background-color: #F9F8F8; */
+  padding-left: 200px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.company__adress{
+  position: relative;
+  margin-top: 0;
+  margin-right: 50px;
+  margin-bottom: 0;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--header-btn_bg-text-color);
+}
+
+.company__adress::before{
+  display: block;
+  content: url(../images/home_icon.svg);
+  position: absolute;
+  left: -19px;
+}
+
+.company__phones{
+  position: relative;
+  margin-top: 0;
+  margin-right: 50px;
+  margin-bottom: 0;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--header-btn_bg-text-color);
+}
+
+.company__phones::before{
+  position: absolute;
+  display: block;
+  content: url(../images/phone_icon.svg);
+  left: -20px;
+}
+
+.company__working-hours{
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--header-btn_bg-text-color);
+}
+
+.company__working-hours::before{
+  position: absolute;
+  display: block;
+  content: url(../images/time_icon.svg);
+  left: -20px;
+}
+/************** COMPANY INFO STYLE ENDS **************/
+/* •••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••• */
+/************** HEADER STYLES START **************/
+.site-header{
+  position: relative;
+  /* background-color: #fff; */
+  /* background-color: #F9F8F8; */
+  background: linear-gradient(to bottom, #F9F8F8 50%, #fff 40%);
+
+}
+
+.header__wrapper{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site__header-link {
+  position: absolute;
+  z-index: 99;
+  /* margin-right: 30px; */
+}
+
+.site__header-logo {
+  width: 177px;
+  height: 86px;
+}
+
+.site-nav{
+  margin-left: 250px;
+  display: flex;
+}
+
+
+.sitenav__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sitenav__item:not(:last-child){
+  margin-right: 55px;
+}
+
+.sitenav__link{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--header-btn_bg-text-color);
+}
+
+
+.site__header-questionlink{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--header-btn_bg-text-color);
+}
+
+/************** HEADER STYLES END **************/
+
 /************** MAIN STYLES START **************/
 /************** QUOTR START *************/
 .quote{
@@ -147,5 +330,72 @@ a {
 }
 
 /*************** QUOTR END **************/
+
+
+/************** HERO SECTION STYLE STARTS **************/
+.hero-section{
+  padding-top: 153px;
+  padding-bottom: 238px;
+  background-color: #F9F8F8;
+  background-image: url('../images/hero.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: calc(50% - 160px) calc(50% - 100px);
+  
+}
+
+.hero__wrapper--end{
+  margin-left: auto;
+  width: 608px;
+}
+
+
+.hero__title{
+  margin-top: 0;
+  margin-bottom: 29px;
+  /* width: 100%; */
+  width: 680px;
+  font-family: 'Futura PT';
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 64px;
+  color: var(--header-btn_bg-text-color);
+}
+
+.hero__title--blue{
+  color: var(--hero-text-color);
+}
+
+.hero__desc{
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-family: 'Futura PT';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  width: 495px;
+  color: var(--text-color);
+}
+
+.hero__link{
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px 48px;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background: #333333;
+  border-radius: 3px;
+}
+
+
+
+/************** HERO SECTION STYLE ENDS **************/
+
+
 
 /************** MAIN STYLES END **************/
