@@ -399,3 +399,146 @@ a {
 
 
 /************** MAIN STYLES END **************/
+
+
+/************** FOOTER STYLES START **************/
+.site-footer{
+  padding-top: 54px;
+  padding-bottom: 23px;
+  /* background-color: #F9F8F8; */
+}
+
+.footer__wrapper{
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer__img{
+  margin-right: 67px;
+}
+
+/* .footer__list{
+  margin-right: 100px;
+} */
+
+.footer__item{
+  margin-bottom: 14px;
+}
+
+.footer__link{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--header-btn_bg-text-color);
+}
+
+/* .footer__list1{
+  margin-right: 100px;
+} */
+
+.footer__item1{
+  margin-bottom: 14px;
+}
+
+.footer__link1{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--header-btn_bg-text-color);
+}
+
+.footer__list2{
+  position: relative;
+}
+
+.footer__item2{
+  margin-bottom: 5px;
+}
+
+.footer__item2:nth-child(1):before{
+  display: block;
+  content: url(../images/time_icon.svg);
+  position: absolute;
+  left: -18px;
+}
+
+.footer__link2{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--header-btn_bg-text-color);
+}
+
+
+.footer__list3{
+  position: relative;
+}
+
+.footer__item3{
+  width: 157px;
+  margin-bottom: 14px;
+}
+
+.footer__link3{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--header-btn_bg-text-color);
+}
+
+.footer__item3:nth-child(1):before{
+  display: block;
+  content: url(../images/home_icon.svg);
+  position: absolute;
+  left: -18px;
+}
+
+.footer__list4{
+  position: relative;
+}
+
+.footer__item4{
+  margin-bottom: 5px;
+}
+
+.footer__link4{
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--header-btn_bg-text-color);
+}
+
+.footer__item4:nth-child(1):before{
+  display: block;
+  content: url(../images/phone_icon.svg);
+  position: absolute;
+  left: -18px;
+}
+
+.copyright_text{
+  text-align: end;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5C5C5C;
+}
+
+
+/************** FOOTER STYLES END **************/
+
